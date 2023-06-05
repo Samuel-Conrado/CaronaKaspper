@@ -1,0 +1,60 @@
+    div:titulo {
+        font: "Helvetica";
+    }
+
+    .t-modal .modal-content {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        border-bottom-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        border-bottom: 1px solid transparent;
+
+    }
+
+    .t-modal .modal-header {
+        padding: 30px 15px;
+    }
+
+    .t-modal .modal-title {
+        text-transform: uppercase;
+        font-size: 20px;
+
+
+    }
+
+    .t-modal .modal-title,
+    .t-modal .modal-close {
+        color: #fff;
+        font: "helvetica"
+    }
+
+
+    /* primary*/
+    .t-modal.primary .modal-content {
+        border-color: #fff;
+    }
+
+    .t-modal.primary .modal-header {
+        background-color: #4F4F4F;
+    }
+
+    .t-modal.primary .modal-body {
+        background-color: #4F4F4F;
+        color: #fff;
+
+    }
+
+    .t-modal.primary .modal-footer {
+        background-color: #4F4F4F;
+    }
+
+   .card h4, h2{
+    font-family: Verdana,;
+    font-style: italic;
+    
+   }
+   .card p{
+    font-family: Arial, sans-serif;
+   }

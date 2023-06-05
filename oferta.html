@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta de Carona</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+
+    <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
+        <div class="container-fluid col-11 m-auto">
+            <a href="menu.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMvg17G4paAnd8mvqG4uoR83LnE_90bGkbWSl2HVsZuRb08jPfCsn_CXRIDAc-cqFhLVs&usqp=CAU"
+                    alt="Logo" width="30" height="35" class="d-inline-block align-text-top"></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="motorista.html">Cadastro do Motorista</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Caronas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="oferta.html">Ofertar Carona</a></li>
+                            <li><a class="dropdown-item" href="reserva.html">Reservar Carona</a></li>
+
+                        </ul>
+
+                </ul>
+
+
+                <form class="d-flex" role="search">
+                    <a href="index.html" button class="btn btn-outline-danger" type="submit">Sair</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/logo.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+    </div>
+    <br>
+
+
+    <div class="container text-center">
+        <h2>Oferecer Carona.</h2>
+
+    </div>
+
+    <div class="container justify-content-md-center">
+        <div class="row">
+            <div class="col-sm-2">
+                <form class="container pt-3">
+                    <label class="form-label">Data:</label>
+                    <input type="date" class="form-control" name="dtcar">
+
+                </form>
+
+            </div>
+            <div class="col-sm-2">
+                <form class="container pt-3">
+                    <label class="form-label">Horário de saída:</label>
+                    <input type="time" class="form-control" name="horas">
+
+
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <form class="container pt-3">
+                    <label class="form-label">End. de origem:</label>
+                    <input type="text" class="form-control" placeholder="Ex: Rua Palestra" name="localIn">
+
+
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <form class="container pt-3">
+                    <label class="form-label">Local de desemparque Final:</label>
+                    <input type="text" class="form-control" placeholder="Ex: Escola Alverde" name="localFim">
+
+
+                </form>
+            </div>
+            <div class="container justify-content-md-center">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <form class="container pt-3">
+                            <label class="form-label">Vagas disponíveis:</label>
+                            <input type="number" class="form-control" name="vagas">
+
+                        </form>
+                    </div>
+                    <div class="col-sm-2">
+                        <form class="container pt-3">
+                            <label class="form-label">Vagas reservadas:</label>
+                            <input type="number" class="form-control" placeholder="Familiares" name="reservadas">
+
+
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <form class="container pt-3">
+                            <label class="form-label">Possíveis Paradas:</label>
+                            <input type="text" class="form-control" placeholder="Ex: Praça Libertadores."
+                                name="paradas">
+
+
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <form class="container pt-3">
+                            <label class="form-label">Observações:</label>
+                            <input type="text" class="form-control"
+                                placeholder="Ex: Gosto de ouvir música durante a viagem." name="obs">
+
+
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="text-center">
+
+            
+            <div class="col">
+                <h1>
+                    <img src="./img/logo1.webp" alt="" width="auto" height="100">
+                </h1>
+            </div>
+        </div>
+        <br>
+
+
+
+        <div class="text-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Cadastrar
+            </button>
+
+
+            <!-- Modal -->
+
+            <div class="modal t-modal primary" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Motorista</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-">
+                                <form class="container pt-3">
+                                    <label class="form-label">Digite sua senha:</label>
+                                    <input type="password" class="form-control" placeholder="*************"
+                                        name="password">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal t-modal primary fade" id="exampleModalToggle2" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2"><i>Carona Cadastrada com
+                                    Sucesso</i>
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/carona2.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="oferta.html" button class="btn btn-outline-danger">Apagar</button></a>
+            <br><br><br>
+        </div>
+
+
+
+        <footer class="mt-5 col-11 m-auto">
+            <div class="row fs-7 text-light bg-dark ">
+                <div class="col-md text-center fw-lighter fst-italic">Desenvolvido por Samuel Conrado
+                    <a>samuelconrado87@gmail.com</a>
+                </div>
+                <div class="col-md text-center fw-lighter fst-italic">Copyright - 2023</div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
